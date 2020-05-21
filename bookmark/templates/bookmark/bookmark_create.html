@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmark Add</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %} {# 장고 사용시 form 태그에서 필수 #}
+        {{ form.as_p }}  {# 장고가 자동으로 fields 항목들을 폼으로 만들어줌 #}
+        <input type="submit" value="Add Bookmark">
+    </form>
+</body>
+</html>
