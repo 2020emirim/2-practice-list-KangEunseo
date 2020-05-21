@@ -15,3 +15,5 @@
 - templates bookmark_create.html
 - urls add
 - modify bookmark_list
+- templates bookmark_detail.html
+- urls detail
