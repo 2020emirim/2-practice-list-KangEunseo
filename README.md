@@ -14,6 +14,7 @@
 - views BookmarkCreateView
 - templates bookmark_create.html
 - urls add
-- modify bookmark_list
+- modify bookmark_list Add Bookmark link
+- views BookmarkDetailView
 - templates bookmark_detail.html
-- urls detail
+- urls detail/<int:pk>/
