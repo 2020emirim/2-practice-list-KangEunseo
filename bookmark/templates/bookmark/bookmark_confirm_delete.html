@@ -5,10 +5,17 @@
     <title>Bookmark Confirm Delete</title>
 </head>
 <body>
+    {% extends 'base.html' %}
+
+    {% block title%}Confirm Delete{% endblock %}
+
+    {% block content %}
     <form action="" method="post">
         {% csrf_token %}
         <div>진짜 지울래? {{ bookmark }}</div>
-        <button type="submit">sure</button>
+        <button type="submit" class="btn btn-sm btn-primary">sure</button>
     </form>
+        <button onclick="history.back()" class="btn btn-sm btn-info">Cancel</button>
+    {% endblock %}
 </body>
 </html>

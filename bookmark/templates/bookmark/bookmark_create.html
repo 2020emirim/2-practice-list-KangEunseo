@@ -5,10 +5,17 @@
     <title>Bookmark Add</title>
 </head>
 <body>
+    {% extends 'base.html' %}
+
+    {% block title%}Confirm Delete{% endblock %}
+
+    {% block content %}
     <form action="" method="post">
         {% csrf_token %} {# 장고 사용시 form 태그에서 필수 #}
         {{ form.as_p }}  {# 장고가 자동으로 fields 항목들을 폼으로 만들어줌 #}
-        <input type="submit" value="Add Bookmark">
+        <input type="submit" value="Add Bookmark" class="btn btn-sm btn-primary">
     </form>
+        <button onclick="history.back()" class="btn btn-sm btn-info">Cancel</button>
+    {% endblock %}
 </body>
 </html>
