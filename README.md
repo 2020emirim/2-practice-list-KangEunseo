@@ -22,3 +22,4 @@
 - update: views BookmarkUpdateView, templates bookmark_update.html, urls, modify Modify link
 - delete: views BookmarkUpdateView, templates bookmark_confirm.html, urls, modify Delete link
 - pagination views, base.html, bookmark_list.html
+- static CSS, ...
