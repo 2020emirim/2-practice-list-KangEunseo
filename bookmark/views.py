@@ -7,6 +7,7 @@ from bookmark.models import Bookmark
 
 class BookmarkList(ListView):  # bookmark_list.html
     model = Bookmark
+    paginate_by = 3
 
 
 class BookmarkCreateView(CreateView):  # bookmark_form.html - form 이름이 흔해서 아래처럼 create로 바꿔준 거
