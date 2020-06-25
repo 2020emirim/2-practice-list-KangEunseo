@@ -38,6 +38,7 @@
 {% endblock %}
 
 {% block pagination %}
+    {% if is_paginated %} {# views에서 paginate_by 사용 안 할 때 리스트 형식으로 나오게 #}
     <ul class="pagination pagination-sm justify-content-center">
         {% if page_obj.has_previous %}
             <li class="page-item"><a href="{{ request.path }}?page={{ page_obj.previous_page_number }}"
@@ -60,6 +61,7 @@
             <li class="page-item disabled"><a href="{{ request.path }}" class="page-link">Next</a></li>
         {% endif %}
     </ul>
+    {% endif %}
 {% endblock %}
 </body>
 </html>
